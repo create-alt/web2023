@@ -1,8 +1,3 @@
-//ボタンを押したときに結果を表示する
-//次回以降、多教科に対応できるように継承用の親クラスを作成していく。
-
-//myfunc を親クラスとして書き換えていくと同時にオブジェクト指向を追加していく。
-//=function(pointBig,pointSmall,radio1,radio2)
 export class myfunc{
   
    sumpoint=0;
@@ -16,24 +11,29 @@ export class myfunc{
       this.test=document.getElementById(pointSmall);
       this.prints=document.getElementsByName(radio1);
       this.presentation=document.getElementsByName(radio2);
+   
+      this.sumpoint=this.exampoint_a+this.test_a+this.print_point+this.presentation_point;
+      console.log(this.sumpoint);
+      
+      if(this.sumpoint>=60){
+      
+      //pにid=finalを代入
+      let p=document.getElementById('finalJ');
+   
+      p.textContent ='合格です';
+
+      }else if(this.sumpoint<60){
+      
+      let p = document.getElementById('finalJ');
+      
+      p.textContent = '不合格です';
+
+      }else{
+
+      let p = document.getElementById('finalJ');
+      
+      p.textContent = 'error,値が正しく入力されていない可能性があります。';
+    
+    }
    }
 }
-/*
-   get PointBig(){
-     return this.exampoint;
-   }
-   get PointSmall(){
-      return this.test;
-   }
-     
-   get Radio1(){
-      return this.prints;
-   }
-   get Radio2(){
-      return this.presentation;
-   }
-   */
-      
-      //この先の条件分岐は子クラスごとに定義
-   
-      //sumpointの計算・条件分岐は子クラスごとに定義
