@@ -39,13 +39,13 @@ class myfuncJp extends myfunc {
    
      p.textContent ='合格です';
 
-     }else if(this.sumpoint<60){
+    }else if(this.sumpoint<60){
       
       let p = document.getElementById('finalJ');
       
       p.textContent = '不合格です';
 
-     }else{
+    }else{
 
       let p = document.getElementById('finalJ');
       
