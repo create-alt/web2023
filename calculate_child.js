@@ -28,6 +28,30 @@ class myfuncJp extends myfunc {
        this.presentation_point=1;
     }
     console.log(this.presentation_point);
+      
+    this.sumpoint=this.exampoint_a+this.test_a+this.print_point+this.presentation_point;
+    console.log(this.sumpoint);
+      
+    if(this.sumpoint>=60){
+      
+      //pにid=finalを代入
+     let p=document.getElementById('finalJ');
+   
+     p.textContent ='合格です';
+
+     }else if(this.sumpoint<60){
+      
+      let p = document.getElementById('finalJ');
+      
+      p.textContent = '不合格です';
+
+     }else{
+
+      let p = document.getElementById('finalJ');
+      
+      p.textContent = 'error,値が正しく入力されていない可能性があります。';
+    
+    }
    }
  }
 
