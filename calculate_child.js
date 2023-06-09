@@ -1,4 +1,3 @@
-//次回以降以下のプログラムをmath_parentの子クラスに変換
 import {myfunc} from 'math_parent.js';
 
 class myfuncJp extends myfunc {
@@ -30,7 +29,7 @@ class myfuncJp extends myfunc {
     }
     console.log(this.presentation_point);
  
-    this.sumpoint=this.exampoint_a+this.test_a+this.print_point+this.presentation_point;
+    /*this.sumpoint=this.exampoint_a+this.test_a+this.print_point+this.presentation_point;
     console.log(this.sumpoint);
     
     if(this.sumpoint>=60){
@@ -52,7 +51,7 @@ class myfuncJp extends myfunc {
     
      p.textContent = 'error,値が正しく入力されていない可能性があります。';
     
-    }
+    }*/
    }
  }
 
