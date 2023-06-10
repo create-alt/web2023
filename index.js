@@ -54,4 +54,5 @@ class myfuncJp extends myfunc {
     }
    }
  }
+
 let myfuncJ=new myfuncJp('pointJ','pointJs','japanese','japaneseA');
