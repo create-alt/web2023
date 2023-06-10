@@ -1,6 +1,6 @@
 import {myfunc} from './calculate_parent.js';
 
-export class myfuncJp extends myfunc{
+export class myfuncJ extends myfunc{
 
    constructor(pointJ,pointJs,japanese,japaneseA){ 
     super(pointJ,pointJs,japanese,japaneseA); 
@@ -54,4 +54,3 @@ export class myfuncJp extends myfunc{
     }
    }
  }
-var myfuncJ=new myfuncJp('pointJ','pointJs','radio','radioA');
