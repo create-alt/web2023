@@ -1,6 +1,6 @@
 import {myfunc} from 'https://github.com/create-alt/web2023/blob/master/calculate_parent.js';
 
-class myfuncJp extends myfunc {
+class myfuncJ extends myfunc {
 
    constructor(pointJ,pointJs,japanese,japaneseA){ 
     super(pointJ,pointJs,japanese,japaneseA); 
@@ -54,5 +54,3 @@ class myfuncJp extends myfunc {
     }
    }
  }
-
-let myfuncJ=new myfuncJp('pointJ','pointJs','japanese','japaneseA');
