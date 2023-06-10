@@ -1,4 +1,4 @@
-import {myfunc} from 'https://create-alt.github.io/web2023/calculate_parent.js';
+import {myfunc} from './calculate_parent';
 
 class myfuncJp extends myfunc {
 
