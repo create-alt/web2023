@@ -1,4 +1,5 @@
-import {myfunc} from "./calculate_parent"
+import {myfunc} from './calculate_parent';
+
 class myfuncJp extends myfunc{
 
    constructor(pointJ,pointJs,japanese,japaneseA){ 
