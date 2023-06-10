@@ -54,4 +54,4 @@ export class myfuncJp extends myfunc{
     }
    }
  }
-var myfancJ=new myfuncJp('pointJ','pointJs','radio','radioA');
+var myfancJ=new myfuncJp();
