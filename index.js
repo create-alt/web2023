@@ -5,9 +5,9 @@ export class myfuncJp extends myfunc{
    constructor(pointJ,pointJs,japanese,japaneseA){ 
     super(pointJ,pointJs,japanese,japaneseA); 
 
-    this.exampoint_a=eval(exampoint.value)*0.15;
+    this.exampoint_a=eval(this.exampoint.value)*0.15;
     
-    this.test_a=eval(test.value)*1.3;
+    this.test_a=eval(this.test.value)*1.3;
 
     if(this.prints.item(0).checked){
        this.print_point=13;
