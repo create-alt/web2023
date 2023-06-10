@@ -1,4 +1,4 @@
-import {myfunc} from './calculate_parent';
+import {myfunc} from './calculate_parent.js';
 
 class myfuncJp extends myfunc{
 
