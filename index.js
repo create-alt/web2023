@@ -1,4 +1,4 @@
-class myfuncJp extends myfunc {
+class myfuncJp extends myfunc{
 
    constructor(pointJ,pointJs,japanese,japaneseA){ 
     super(pointJ,pointJs,japanese,japaneseA); 
