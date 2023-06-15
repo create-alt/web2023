@@ -1,5 +1,5 @@
 //ボタンを押したときに結果を表示する
-var myfunc=function(){
+var myfuncJ=function(){
    var exampoint=document.getElementById("pointJ");
    var exampoint_a=eval(exampoint.value)*0.15;
    
@@ -37,17 +37,17 @@ var myfunc=function(){
     //var p = document.createlement('p');
 
     //pにid=finalを代入
-    let p=document.getElementById('final');
+    let p=document.getElementById('finalJ');
  
     p.textContent ='合格です';
 
     //document.getElementById('final').appendChild( p );
    }else if(sumpoint<60){
-    let p = document.getElementById('final');
+    let p = document.getElementById('finalJ');
    
     p.textContent = '不合格です';
    }else{
-    let p = document.getElementById('final');
+    let p = document.getElementById('finalJ');
    
     p.textContent = 'error';
    }
