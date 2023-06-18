@@ -52,3 +52,11 @@ input[type=button]{
 .answer{
   font-size: 125%;
 }
+
+h3#MathA{
+  color:rgb(0, 42, 255);
+}
+
+h3#MathC{
+  color:rgb(24, 207, 103)
+}

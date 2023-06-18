@@ -41,13 +41,10 @@
   <div class=input_result>
     <h2>単位合否</h2>
     <p>単位が取得できるかどうかを計算できる機能を追加しました。(一年生用)<br>
-<<<<<<< HEAD
       自由にご利用ください。注:確実なものではないのでお気をつけください。<br>
       順次追加していきます。</p>
-=======
       自由にご利用ください。注:確実なものではないのでご注意ください。<br>
       他教科は順次追加していきます。</p>
->>>>>>> 41ad9df0c9e9f9955ac39139b91ce69e95f096f4
     <p>入力の際には各項目の条件にしたがって<strong>数字のみ</strong>入力してください。</p>
     <form action="#" method="GET">
     <ul>
@@ -59,18 +56,60 @@
           小テスト点数(割合を1~10の整数で入力してください)<br>
             <label></label><input type="number" id="pointJs" name="pointJs"><br>
           提出物<br>
-            <label for="radio11"></label><input type="radio" name="radio" value="radio1" id="radio11">すべて提出している<br> <!--10割-->
-            <label for="radio22"></label><input type="radio" name="radio" value="radio2" id="radio22">全体の8割ほど提出している<br><!--8割-->
-            <label for="radio33"></label><input type="radio" name="radio" value="radio3" id="radio33">半分前後<br><!--5割-->
-            <label for="radio44"></label><input type="radio" name="radio" value="radio4" id="radio44">ほとんど提出していない<br><!--1割-->
+            <label for="radio11"></label><input type="radio" name="radioJ" value="radio1" id="radio11">すべて提出している<br> <!--10割-->
+            <label for="radio22"></label><input type="radio" name="radioJ" value="radio2" id="radio22">全体の8割ほど提出している<br><!--8割-->
+            <label for="radio33"></label><input type="radio" name="radioJ" value="radio3" id="radio33">半分前後<br><!--5割-->
+            <label for="radio44"></label><input type="radio" name="radioJ" value="radio4" id="radio44">ほとんど提出していない<br><!--1割-->
           口頭発表のでき<br>
-            <label for="radioAa"></label><input type="radio" name="radioA" value="radioA" id="radioAa">良<!--8割-->
-            <label for="radioBb"></label><input type="radio" name="radioA" value="radioB" id="radioBb">可<!--5割-->
-            <label for="radioCc"></label> <input type="radio" name="radioA" value="radioC" id="radioCc">不可<br><!--1割-->
+            <label for="radioAa"></label><input type="radio" name="radioJA" value="radioA" id="radioAa">良<!--8割-->
+            <label for="radioBb"></label><input type="radio" name="radioJA" value="radioB" id="radioBb">可<!--5割-->
+            <label for="radioCc"></label> <input type="radio" name="radioJA" value="radioC" id="radioCc">不可<br><!--1割-->
           </div>  
           <h4>結果 ボタンをクリック！</h4>
             <label></label><input type="button" value="check" onclick="myfuncJ()"><br> 
             <p class="answer" id="finalJ"></p>
+         </li>
+         <li>
+          <h3 id="MathA">数学A</h3>
+          <div class="point">
+          試験点数(2回の合計)<br>
+            <label></label><input type="number" id="pointMa" name="pointMa"><br>
+          小テスト点数(割合を1~10の整数で入力してください)<br>
+            <label></label><input type="number" id="pointMas" name="pointMas"><br>
+          提出物<br>
+            <label for="radio11"></label><input type="radio" name="radioMa" value="radio1" id="radio11">すべて提出している<br> <!--10割-->
+            <label for="radio22"></label><input type="radio" name="radioMa" value="radio2" id="radio22">全体の8割ほど提出している<br><!--8割-->
+            <label for="radio33"></label><input type="radio" name="radioMa" value="radio3" id="radio33">半分前後<br><!--5割-->
+            <label for="radio44"></label><input type="radio" name="radioMa" value="radio4" id="radio44">ほとんど提出していない<br><!--1割-->
+          受講態度<br>
+            <label for="radioAa"></label><input type="radio" name="radioMaA" value="radioA" id="radioAa">良<!--8割-->
+            <label for="radioBb"></label><input type="radio" name="radioMaA" value="radioB" id="radioBb">可<!--5割-->
+            <label for="radioCc"></label> <input type="radio" name="radioMaA" value="radioC" id="radioCc">不可<br><!--1割-->
+          </div>  
+          <h4>結果 ボタンをクリック！</h4>
+            <label></label><input type="button" value="check" onclick="myfuncMa()"><br> 
+            <p class="answer" id="finalMa"></p>
+         </li>
+         <li>
+          <h3 id="MathC">数学C</h3>
+          <div class="point">
+          試験点数(4回の合計)<br>
+            <label></label><input type="number" id="pointMc" name="pointMc"><br>
+          小テスト点数(割合を1~10の整数で入力してください)<br>
+            <label></label><input type="number" id="pointMcs" name="pointMcs"><br>
+          提出物<br>
+            <label for="radio11"></label><input type="radio" name="radioMc" value="radio1" id="radio11">すべて提出している<br> <!--10割-->
+            <label for="radio22"></label><input type="radio" name="radioMc" value="radio2" id="radio22">全体の8割ほど提出している<br><!--8割-->
+            <label for="radio33"></label><input type="radio" name="radioMc" value="radio3" id="radio33">半分前後<br><!--5割-->
+            <label for="radio44"></label><input type="radio" name="radioMc" value="radio4" id="radio44">ほとんど提出していない<br><!--1割-->
+          受講態度<br>
+            <label for="radioAa"></label><input type="radio" name="radioMcA" value="radioA" id="radioAa">良<!--8割-->
+            <label for="radioBb"></label><input type="radio" name="radioMcA" value="radioB" id="radioBb">可<!--5割-->
+            <label for="radioCc"></label> <input type="radio" name="radioMcA" value="radioC" id="radioCc">不可<br><!--1割-->
+          </div>  
+          <h4>結果 ボタンをクリック！</h4>
+            <label></label><input type="button" value="check" onclick="myfuncMc()"><br> 
+            <p class="answer" id="finalMc"></p>
          </li>
       </ul>    
    </div> 
