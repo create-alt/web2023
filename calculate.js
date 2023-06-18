@@ -39,16 +39,16 @@ var myfuncJ=function(){
     //pにid=finalを代入
     let p=document.getElementById('finalJ');
  
-    p.textContent ='合格です';
+    p.textContent ='合格です。単位を取得できている可能性が高いです。';
 
     //document.getElementById('final').appendChild( p );
    }else if(sumpoint<60){
     let p = document.getElementById('finalJ');
    
-    p.textContent = '不合格です';
+    p.textContent = '不合格です。単位を取得できていない可能性が高いです。';
    }else{
     let p = document.getElementById('finalJ');
    
-    p.textContent = 'error';
+    p.textContent = 'error　値が正しく入力できているかどうか確認してみてください。';
    }
 }

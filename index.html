@@ -40,35 +40,37 @@
     </div>
   <div class=input_result>
     <h2>単位合否</h2>
-    <p>単位が取得できるかどうかを計算できる機能を追加しました。注:一年生用<br>
-      自由にご利用ください。(確実なものではないのでご注意ください。)<br>
-      順次追加していきます。現在調整中です(6/10現在)</p>
+    <p>単位が取得できるかどうかを計算できる機能を追加しました。(一年生用)<br>
+      自由にご利用ください。注:確実なものではないのでお気をつけください。<br>
+      順次追加していきます。</p>
     <p>入力の際には各項目の条件にしたがって<strong>数字のみ</strong>入力してください。</p>
     <form action="#" method="GET">
     <ul>
         <li>
-          <h3>国語</h3>
+          <h3 id="japanese">国語</h3>
+          <div class="point">
           試験点数(4回の合計)<br>
             <label></label><input type="number" id="pointJ" name="pointJ"><br>
           小テスト点数(割合を1~10の整数で入力してください)<br>
             <label></label><input type="number" id="pointJs" name="pointJs"><br>
           提出物<br>
-            <label for="radio11"></label><input type="radio" name="radio" value="radio1" id="radio11">すべて提出している <!--10割-->
-            <label for="radio22"></label><input type="radio" name="radio" value="radio2" id="radio22">全体の8割ほど提出している<!--8割-->
-            <label for="radio33"></label><input type="radio" name="radio" value="radio3" id="radio33">半分前後<!--5割-->
+            <label for="radio11"></label><input type="radio" name="radio" value="radio1" id="radio11">すべて提出している<br> <!--10割-->
+            <label for="radio22"></label><input type="radio" name="radio" value="radio2" id="radio22">全体の8割ほど提出している<br><!--8割-->
+            <label for="radio33"></label><input type="radio" name="radio" value="radio3" id="radio33">半分前後<br><!--5割-->
             <label for="radio44"></label><input type="radio" name="radio" value="radio4" id="radio44">ほとんど提出していない<br><!--1割-->
           口頭発表のでき<br>
             <label for="radioAa"></label><input type="radio" name="radioA" value="radioA" id="radioAa">良<!--8割-->
             <label for="radioBb"></label><input type="radio" name="radioA" value="radioB" id="radioBb">可<!--5割-->
             <label for="radioCc"></label> <input type="radio" name="radioA" value="radioC" id="radioCc">不可<br><!--1割-->
+          </div>  
           <h4>結果 ボタンをクリック！</h4>
             <label></label><input type="button" value="check" onclick="myfuncJ()"><br> 
-            <p id="finalJ"></p>
+            <p class="answer" id="finalJ"></p>
          </li>
       </ul>    
    </div> 
   <div class=footer>
-    2023/06/10
+    <br><br><br>2023/06/18
   </div>
 </body>
 </html>
